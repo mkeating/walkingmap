@@ -6,7 +6,7 @@ var library = [{
 }];
 
 var libraryStyle = {
-	"color": "#FFBE91",
+	"color": "#0DFFCB",
     "weight": 5,
     "opacity": 0.65
 };

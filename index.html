@@ -5,6 +5,7 @@
 
 </head>
 <style type="text/css">
+
 #map {
 	height: 600px;
 	border: 1px solid white;
@@ -22,13 +23,24 @@ body{
 
 	border: 3px solid white;
 	float:left;
-	width: 50%;
-	height: 60px;
+	width: 124px;
+	height: 72px;
 	color:white;
 	font-weight: 300;
 	border-radius: 15px;
 	margin-left:  23%;
 	margin-right:  23%;
+
+}
+
+img{
+	display:block;
+	margin: 0 auto;
+}
+
+#buttonBox{
+	width:80%;
+	margin: 0 auto;
 
 }
 
@@ -38,9 +50,25 @@ body{
 	margin-top: 20px;
 	
 }
+#explain{
+
+	margin: 0 auto;
+	text-align: center;
+}
+#explain p{
+	float: none;
+	color: white;
+	
+}
+
+#explain p a{
+	float: none;
+	color: white;
+
+}
 
 #movies{
-	background-color: #CC572D;
+	background-color: #BF0CE8;
 }
 
 #churches{
@@ -48,29 +76,50 @@ body{
 }
 
 #grocery{
-	background-color: #6E7499;
+	background-color: #FF6800;
 }
 
 #library{
-	background-color: #FFBE91;
+	background-color: #0DFFCB;
 }
 
 #title{
+	width: 100%;
+	float:left;
 	color:white;
 	font-size: 6em;
-
-
 }
+
+
+#github{
+	float:right;
+}
+
+#buffer{
+	float: left;
+	height: 50px;
+	min-height: 30px;
+	width: 100%;
+}
+
+
 </style>
 <body>
 
-	<div id="title">WALKING DISTANCE</div>
+	<div id="title">WALKING DISTANCE   <a id="github" href="https://github.com/mkeating/walkingmap"><img src="icons/github.png"></a></div>
+	<div id="explain">
+		<p>Click each icon to see which areas are within a 2 mile walking distance from each resource; movie theaters, churches, grocery stores, and libraries.<p>
+		<p>Sources: ESRI Streets, US Dept. of Commerce NAICS database</p>
+		<p>Built with <a href="http://leafletjs.com/">Leaflet</a></p> 
+	</div>
 	<div id="map"></div>
-
-	<div class="box"><div id="movies" class="button">Movie Theaters</div></div>
-	<div class="box"><div id="churches" class="button">Churches</div></div>
-	<div class="box"><div id="grocery" class="button">Grocery Stores</div></div>
-	<div class="box"><div id="library" class="button">Libraries</div></div>
+	<div id="buttonBox">
+		<div class="box"><div id="movies" class="button"><img src="icons/movie.png"></div></div>
+		<div class="box"><div id="churches" class="button"><img src="icons/church.png"></div></div>
+		<div class="box"><div id="grocery" class="button"><img src="icons/grocery.png"></div></div>
+		<div class="box"><div id="library" class="button"><img src="icons/library.png"></div></div>
+	</div>
+	<div id="buffer"></div>
 
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js" charset="utf-8"></script>

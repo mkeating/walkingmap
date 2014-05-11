@@ -6,7 +6,7 @@ var movies = [{
 }];
 
 var movieStyle = {
-	"color": "#CC572D",
+	"color": "#BF0CE8",
     "weight": 5,
     "opacity": 0.65
 };

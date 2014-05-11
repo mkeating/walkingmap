@@ -6,7 +6,7 @@ var grocery = [{
 }];
 
 var groceryStyle = {
-	"color": "#6E7499",
+	"color": "#FF6800",
     "weight": 5,
     "opacity": 0.65
 };
