@@ -8,5 +8,7 @@ var churches = [{
 var churchStyle = {
 	"color": "#52C4FF",
     "weight": 5,
-    "opacity": 0.65
+    "opacity": 0.65,
+    "-webkit-transition": ".5s", /* Safari */
+    "transition": ".5s"
 };
